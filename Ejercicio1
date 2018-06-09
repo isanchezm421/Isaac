@@ -1,0 +1,49 @@
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner (System.in);
+
+        
+
+        int contador = 0;
+
+        int decision = 1;
+
+        int promedio = 0;
+
+        int numero = 0;
+
+        int total = 0;
+
+        while (decision != 0) {
+
+            System.out.println("Digite un numero");
+
+            numero = scanner.nextInt();
+
+            total = total + numero;
+
+            contador = contador + 1;
+
+            System.out.println("¿Desea digitar otro numero");
+
+            int accion = scanner.nextInt();
+
+            if (accion == 0) {
+
+                decision = 0;
+
+            }
+
+            
+
+        }
+
+    promedio = total/contador;
+
+    System.out.println("El promedio total de todos los numeros es de : " + promedio);
+
+    
+
+}
+
+}
