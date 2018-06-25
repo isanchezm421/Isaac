@@ -1,0 +1,20 @@
+int lado;
+        try (Scanner teclado = new Scanner(System.in)) {
+            System.out.print("Introduzca el numero de asteriscos del cuadrado: ");
+            lado = teclado.nextInt();
+        }
+ 
+        System.out.println();
+        for(int row = 1; row <= lado; row++){
+            for(int col = 1; col <= lado; col++){
+                if(row == 1 || row == lado || col == 1 || col == lado){
+                    System.out.print("*");
+                }
+                else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
