@@ -1,0 +1,18 @@
+public class Palindromo {
+    private static Object st;
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        String frase, frase1 = "";
+        System.out.println("Introduzca una frase: ");
+        frase = teclado.nextLine(); 
+        for (int i = frase.length() - 1; i >= 0; i--) { 
+             frase1 = frase1 + frase.charAt(i); 
+        } 
+        if (frase.equals(frase1)) { 
+            System.out.println("La palabra es palindroma");
+        }
+        
+    }
