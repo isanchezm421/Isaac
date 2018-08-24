@@ -30,7 +30,7 @@ public class CSV {
             FileWriter escribir;
             PrintWriter linea;
             if (!file.exists()) {
-                System.out.println("El Archivo no existe");
+                System.out.println("No hay archivo");
                 file.createNewFile();
                 escribir = new FileWriter(file, true);
                 linea = new PrintWriter(escribir);
@@ -44,7 +44,7 @@ public class CSV {
                 linea.close();
                 escribir.close();
             }
-            System.out.println("Done");
+            System.out.println("The file has been created successfully");
 
         } catch (Exception e) {
 
